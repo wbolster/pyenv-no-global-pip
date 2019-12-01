@@ -19,7 +19,14 @@ How?
 
 This repository can be used as a ‘fake’ installed Python version for use with `pyenv`. It provides a bunch of `pip`, `pipX`, and `pipX.Y` commands that will simply trigger an error when invoked. The result is that it is impossible to accidentally run `pip` outside a virtual environment, and mess up your Python installations.
 
-Clone this repo into `~/.pyenv/versions/no-global-pip`, and make sure the `~/.pyenv/versions` file contains `no-global-pip` as the first item. For example, to have multiple Python versions available from any terminal without any extra setup, use something like this:
+Clone this repo into `~/.pyenv/versions/no-global-pip`:
+
+```
+cd ~/.pyenv/versions
+git clone https://github.com/wbolster/pyenv-no-global-pip.git
+```
+
+Make sure the `~/.pyenv/versions` file contains `no-global-pip` as the first item. For example, to have multiple Python versions available from any terminal without any extra setup, use something like this:
 
 ```
 no-global-pip
