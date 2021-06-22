@@ -3,6 +3,16 @@ pyenv no-global-pip
 
 This is an addition for [pyenv](https://github.com/pyenv/pyenv) to prevent accidental `pip` commands outside a virtual environment (`venv`/`virtualenv`).
 
+☠ OBSOLETE ☠
+------------
+
+*do not use.* instead, put this in your `.config/pip/pip.conf`:
+
+```
+[global]
+require-virtualenv = true
+```
+
 Why?
 ----
 
